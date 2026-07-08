@@ -43,7 +43,7 @@ export const SERVICES: Service[] = [
   {
     id: 'mentorship',
     title: 'Ongoing Mentorship',
-    description: 'Receive continued guidance throughout every stage of the recruiting process—from your first evaluation to your college commitment.',
+    description: 'Receive continued guidance throughout every stage of the recruiting process, from your first evaluation to your college commitment.',
     iconName: 'TrendingUp'
   }
 ];export const RECRUITING_STEPS: RecruitingStep[] = [
