@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion, useMotionValue, useSpring } from 'motion/react';
 import { Calendar, ChevronRight, Trophy, Award, Users, Star } from 'lucide-react';
+import bgImage from '../assets/images/baseball_stadium_bg_1783476761323.jpg';
+import headshotImage from '../assets/images/DARIN_Photo.jpg';
 
 export default function Hero() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -87,7 +89,7 @@ export default function Hero() {
       <motion.div
         className="absolute inset-0 z-0 bg-cover bg-center opacity-80 scale-105"
         style={{
-          backgroundImage: `url('/src/assets/images/baseball_stadium_bg_1783476761323.jpg')`,
+          backgroundImage: `url(${bgImage})`,
           x: bgX,
           y: bgY,
         }}
@@ -188,7 +190,7 @@ export default function Hero() {
               className="w-full h-full rounded-2xl overflow-hidden border-2 border-slate-900/80 shadow-2xl relative group"
             >
               <img
-                src="/src/assets/images/darin_hendrickson_headshot_1783476743157.jpg"
+                src={headshotImage}
                 alt="Coach Darin Hendrickson"
                 className="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
