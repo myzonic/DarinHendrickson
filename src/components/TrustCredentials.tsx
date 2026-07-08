@@ -7,7 +7,7 @@ import { Trophy, ShieldCheck, Users, Calendar, Award, Star } from 'lucide-react'
 function CounterUp({ value, suffix = '' }: { value: string; suffix?: string }) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: '-30px' });
 
   // Parse numeric part of the value (e.g. "1,006+" -> 1006)
   const targetNum = parseInt(value.replace(/[^0-9]/g, ''), 10) || 0;
@@ -109,7 +109,7 @@ export default function TrustCredentials() {
         <motion.div 
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-50px' }}
+          viewport={{ once: true, margin: '0px' }}
           variants={{
             visible: { transition: { staggerChildren: 0.08 } }
           }}
