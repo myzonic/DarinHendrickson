@@ -198,7 +198,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60" />
             </motion.div>
 
-            {/* Floating Achievement Cards (Only Parallaxed on Desktop) */}
+            {/* Floating Achievement Cards */}
             {floatingBadges.map((badge, idx) => {
               const floatingAnimation = {
                 y: [0, -8, 0],
@@ -214,7 +214,7 @@ export default function Hero() {
               return (
                 <motion.div
                   key={badge.title}
-                  className={`absolute z-20 ${badge.style} hidden sm:flex items-center gap-3 px-4 py-2.5 rounded-xl glass-card text-white font-medium text-xs md:text-sm border-white/10 shadow-lg pointer-events-none`}
+                  className={`absolute z-20 ${badge.style} flex items-center gap-3 px-2 py-1.5 sm:px-4 sm:py-2.5 rounded-xl glass-card text-white font-medium text-[10px] sm:text-xs md:text-sm border-white/10 shadow-lg pointer-events-none`}
                   style={{
                     x: isMobile ? 0 : cardX,
                     y: isMobile ? 0 : cardY,
