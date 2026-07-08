@@ -163,7 +163,7 @@ export default function Footer() {
               <div>
                 <span className="block text-gray-500 font-mono text-[9px] uppercase tracking-wider mb-0.5">Primary Hub</span>
                 <p className="text-gray-200 text-sm font-semibold">
-                  Saint Louis, Missouri
+                  Glen Carbon, IL, 62034
                 </p>
               </div>
             </li>
