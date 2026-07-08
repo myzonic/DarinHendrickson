@@ -1,6 +1,5 @@
 {
   "name": "Darin Hendrickson Baseball Consulting",
   "description": "Premium college baseball recruiting guidance from legendary coach Darin Hendrickson. Personalized roadmap, player evaluations, and mentorship to help baseball players reach the next level.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "requestFramePermissions": []
 }
